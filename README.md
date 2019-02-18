@@ -52,6 +52,25 @@ mysqli_close($dbh);
 Connected successfully to MySQL database
 ```
 
+## Blink an LED from a webpage.
+This PHP code will use the `shell_exec` function to run `bash` commands to trigger the GPIO pins.
+
+Looking for a native PHP library for GPIO interaction? [Check this out](https://github.com/WiringPi/WiringPi-PHP).
+
+```
+<?php
+$output = shell_exec('gpio readall');
+echo "<pre>$output</pre>";
+
+shell_exec('gpio -g mode 17 out');
+shell_exec('gpio -g write 17 1');
+sleep(3);
+shell_exec('gpio -g write 17 0');
+?>
+
+<button value="Refresh Page" onClick="window.location.reload()">Do it again!</button>
+```
+
 ## Installing WordPress
 
 "WordPress (WordPress.org) is a free and open-source content management system (CMS) based on PHP & MySQL. Features include a plugin architecture and a template system. It is most associated with blogging but supports other types of web content including more traditional mailing lists and forums, media galleries, and online stores. Used by more than 60 million websites, including 30.6% of the top 10 million websites as of April 2018, WordPress is the most popular website management system in use." (From [Wikipedia](https://en.wikipedia.org/wiki/WordPress))
@@ -66,3 +85,11 @@ Want to Learn More? Here are some more in-depth walkthroughs.
 * [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 * [How to Install Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
 * [How To Install WordPress with LEMP on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-18-04)
+
+### Looking for other uses for your web server?
+Check out [awesome-selfhosted](https://github.com/Kickball/awesome-selfhosted) on Github or [/r/SelfHosted](https://reddit.com/r/selfhosted) on Reddit. Not all of these applications use a web server, but there are quite a few that do. A few different examples:
+* [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) - the CMS that powers wikipedia
+* [NextCloud](https://nextcloud.com) - a self-hosted alternative to Dropbox.
+* [PrivateBin](https://privatebin.info/) - a selfhosted "pastebin" for sharing plain text.
+* [osTicket](http://osticket.com/) - Web application for managing support requests.
+* [YOURLS](http://yourls.org/) - Your Own URL Shortener
