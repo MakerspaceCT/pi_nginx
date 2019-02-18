@@ -9,7 +9,9 @@ These commands and code blocks will be used during MakerspaceCT's Raspberry Pi: 
 # systemctl enable  php7.0-fpm
 # apt-get install libfcgi0ldbl
 # cgi-fcgi -bind -connect /run/php/php7.0-fpm.sock
-
+```
+Sample nginx configuration.
+```
 server {
         listen 80 default_server;
         listen [::]:80 default_server;
@@ -26,7 +28,11 @@ server {
                 fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
         }
 }
+```
 
+More commands.
+
+```
 # echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 
 # service nginx start
@@ -35,7 +41,10 @@ server {
 
 # service mysql start
 # systemctl enable mysql
+```
 
+Sample PHP code for testing MySQL.
+```
 <?php
 $dbh = mysqli_connect('localhost', 'admin', 'pass');
 if (!$dbh) {
@@ -44,7 +53,10 @@ if (!$dbh) {
 echo 'Connected successfully to MySQL';
 mysqli_close($dbh);
 ?>
+```
 
+More commands.
+```
 # mysql -u root -e "CREATE USER 'admin'@'localhost' IDENTIFIED BY 'pass';"
 # mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;"
 
