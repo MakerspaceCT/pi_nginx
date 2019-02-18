@@ -61,7 +61,7 @@ Connected successfully to MySQL database
 ## Where to Go Next
 Want to Learn More? Here are some more in-depth walkthroughs.
 
-**Note:** These tutorials are written specifically for the Ubuntu 18.04 LTS operating system. If you're working a Raspberry Pi, you'll probably be using a Raspbian Stretch operating system, as we do in class. Both Raspbian Stretch and Ubuntu 18.04 Debian-based distributions and commands should work similarly on each. If you have any issues, Google is your friend.
+**Note:** DigitalOcean has a great selection of tutorials for many Linux setup and configuration tasks. However, *these tutorials are written specifically for the Ubuntu 18.04 LTS operating system.* **If you're working a Raspberry Pi, you'll probably be using a Raspbian Stretch operating system, as we do in class. Both Raspbian Stretch and Ubuntu 18.04 Debian-based distributions and commands should work similarly on each, but there may be slight differences.** If you have any issues, Google is your friend.
 
 * [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 * [How to Install Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
