@@ -98,6 +98,14 @@ Want to Learn More? Here are some more in-depth walkthroughs.
 * [How to Install Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
 * [How To Install WordPress with LEMP on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-on-ubuntu-18-04)
 
+### Aren't we getting ahead of ourselves? Shouldn't you be telling us about domain names?
+* If you'd like a great (accessible) read on all things domain names, check out Edward Loveall's book [Domain Name Sanity](https://gumroad.com/l/domain-name-sanity).
+
+### I need to register a domain name!
+* There are hundreds of domain registrars out there. [Namesilo](https://www.namesilo.com/) (no endorsement) is a popular, low-cost choice, though each registrar offers slightly different services in terms of features and support.
+* If you're looking for a free, temporary use domain, [Freenom](https://freenom.com) offers .tk, .ga, .gq domains free of charge, with some restrictions. **These are probably not a good idea for a project you care about, but are definitely a cheap (free) option for working on a test project.
+* **DNS**: Your domain registrar probably provides DNS-hosting services, but if they don't meet your needs, [Hurricane Electric](https://dns.he.net) and [Nova53](https://dns.nova53.net) both offer free DNS services that may meet your needs.
+
 ### Looking for other uses for your web server?
 Check out [awesome-selfhosted](https://github.com/Kickball/awesome-selfhosted) on Github or [/r/SelfHosted](https://reddit.com/r/selfhosted) on Reddit. Not all of these applications use a web server, but there are quite a few that do. A few different examples:
 * [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) - the CMS that powers wikipedia
